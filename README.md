@@ -11,7 +11,9 @@ app ID, and associated data. Then:
    your Pusher credentials.
    
 2. Rename 'settings-template.js' to 'settings.js' and fill in your 
-   Pusher details, and server location.
+   Pusher details, and server location. The g_ProxyURL should be in the form:
+
+   var g_ProxyURL = "http://[domain]/[path]/sendevent.php?cmd=";
 
 3. Run it!
 
