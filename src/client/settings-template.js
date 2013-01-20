@@ -1,0 +1,2 @@
+var g_ProxyURL = "???";
+var g_PusherID = "???";

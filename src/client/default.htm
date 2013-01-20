@@ -1,0 +1,53 @@
+<html>
+
+  <head>
+    <title>HTML5/Pusher example - An IRC Client</title>
+    
+    <meta http-equiv="content-script-type" content="text/javascript"/>
+	  <meta name="keywords" content="html5,javascript,irc" />
+	  <meta name="description" content="An IRC client" />
+  </head>
+    
+  <body bgcolor="#665433">
+
+    <img src="banner.png"></img>
+    
+    <table width="440" border="0">
+      <tr>
+        <td>
+          <textarea rows="15" cols="62" readonly="" id="irc.result"></textarea>
+        </td>
+        <td>
+          <textarea rows="15"  cols="12" readonly="" id="irc.channels"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="text" id="irc.entrybox" size="90"/>
+            <button id="irc.sendbutton">Send</button>
+        </td>
+      </tr>
+    </table>
+
+
+    <!--  Load these first, or specify them explicitly here. -->
+    <script type="text/javascript" src="settings.js"></script>
+
+    <!--  Load the bootstrap which allows .include to work -->
+    <script type="text/javascript" src="bootstrap.js"></script>
+
+    <!-- Define which conduits you wish to use to move information in/out/push -->
+    <script type="text/javascript" src="comic/conduits/html5elements.js"></script>
+    <script type="text/javascript" src="comic/conduits/proxySGXFile.js"></script>
+    <script type="text/javascript" src="comic/conduits/pushPusher.js"></script>
+
+
+    <script type="text/javascript">
+      SGXSystem.include([  "example.js", "comic/comic.js"], function() {
+        initComicWrapper();
+      });
+    </script>
+
+  </body>
+</html>
+
