@@ -21,7 +21,7 @@ Note: If you plan on hosting the client code on a different machine to the
 server code (e.g. if you are developing on localhost, but want live data)
 then add:
 
-header('Access-Control-Allow-Origin: [domain name here]')
+  header('Access-Control-Allow-Origin: [domain name here]')
 
 to the php code.
 
